@@ -243,7 +243,7 @@ PRODUCT_PACKAGES += \
 
 # Gcam
 PRODUCT_PACKAGES += \
-    GoogleCameraGo
+    GCamGo
 
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
