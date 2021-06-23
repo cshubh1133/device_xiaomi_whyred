@@ -56,6 +56,8 @@ TARGET_SCREEN_DENSITY := 440
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Fluid stuff
+FLUID_BUILD_TYPE := OFFICIAL
 PRODUCT_PRODUCT_PROPERTIES += \
   ro.fluid.maintainer=Arnav \
   ro.fluid.cpu=SD636
+
