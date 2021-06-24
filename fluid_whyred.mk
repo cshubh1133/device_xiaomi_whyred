@@ -29,7 +29,7 @@ $(call inherit-product, device/xiaomi/whyred/device.mk)
 $(call inherit-product-if-exist, vendor/MiuiCamera/config.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/fluid/config/common.mk)
+$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
 
 PRODUCT_NAME := fluid_whyred
 PRODUCT_BRAND := Xiaomi
