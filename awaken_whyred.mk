@@ -1,4 +1,4 @@
-# 
+#
 # Copyright (C) 2018 The Mokee Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,10 +28,9 @@ $(call inherit-product, device/xiaomi/whyred/device.mk)
 # Inherit from custom vendor
 $(call inherit-product-if-exist, vendor/MiuiCamera/config.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
-
-PRODUCT_NAME := fluid_whyred
+# Inherit some common awaken stuff.
+$(call inherit-product, vendor/awaken/config/common.mk)
+PRODUCT_NAME := awaken_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
@@ -49,15 +48,7 @@ BUILD_FINGERPRINT := google/redfin/redfin:11/RQ2A.210505.003/7255357:user/releas
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys
 
-TARGET_VENDOR := Xiaomi
-IS_PHONE := true
-TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_DENSITY := 440
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
-# Fluid stuff
-FLUID_BUILD_TYPE := OFFICIAL
-PRODUCT_PRODUCT_PROPERTIES += \
-  ro.fluid.maintainer=Arnav \
-  ro.fluid.cpu=SD636
-
+#Gapps
+USE_GAPPS := true

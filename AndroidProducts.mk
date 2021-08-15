@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2018 The LineageOS Project
 #
@@ -14,4 +15,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fluid_whyred.mk
+    $(LOCAL_DIR)/awaken_whyred.mk
+
+COMMON_LUNCH_CHOICES := \
+    awaken_whyred-user \
+    awaken_whyred-userdebug \
+    awaken_whyred-eng
